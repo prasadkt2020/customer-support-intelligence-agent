@@ -1,0 +1,27 @@
+- name: avg_resolution_time
+  description: Average time taken to resolve support tickets
+  sql: |
+    SELECT
+      ROUND(AVG(TIMESTAMP_DIFF(resolved_at, created_at, MINUTE)), 2) AS avg_resolution_minutes
+    FROM `support.tickets`
+
+- name: top_issue_categories
+  description: Top 5 issue categories by ticket count
+  sql: |
+    SELECT
+      category,
+      COUNT(*) AS ticket_count
+    FROM `support.tickets`
+    GROUP BY category
+    ORDER BY ticket_count DESC
+    LIMIT 5
+
+- name: agent_performance
+  description: Number of tickets resolved by each agent
+  sql: |
+    SELECT
+      agent_id,
+      COUNT(*) AS tickets_resolved
+    FROM `support.tickets`
+    GROUP BY agent_id
+    ORDER BY tickets_resolved DESC
