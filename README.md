@@ -1,19 +1,5 @@
 # customer-support-intelligence-agent
 
-Here is a **fully reorganized, clean, professional README** with a logical flow:
-
-- **Project Goal**  
-- **Workflow**  
-- **Architecture Overview**  
-- **Architecture Layers (detailed explanation)**  
-- **Workflow Diagram**  
-- **Project Structure**
-
-Everything is concise, enterprise‑style, and includes **Antigravity** as a first‑class component.
-
----
-
-# **Customer Support Intelligence Agent**
 
 A FastAPI‑based system that integrates Google BigQuery, semantic search, an AI reasoning engine, and Antigravity’s agent execution environment to deliver analytics and intelligent insights on customer support data through a unified REST API.
 
