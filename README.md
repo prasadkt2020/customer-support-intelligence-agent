@@ -163,5 +163,3 @@ data/
 └── embeddings/           # Generated vectors
 
 
-
-Just tell me what you’d like next.
